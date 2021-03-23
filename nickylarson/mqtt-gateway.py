@@ -67,6 +67,6 @@ client = mqtt.Client()
 client.on_connect = on_connect
 client.on_message = on_message
 
-client.connect("<MosquittoIP>", 5883, 60)
+client.connect("<MosquittoIP>", <MosquittoPort>, 60)
 
 client.loop_forever()
